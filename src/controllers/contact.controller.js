@@ -12,7 +12,7 @@ const ContactController = {
     storeContact : async (req, res) => {
         const newContact = new ContactModel(req.body);
         await newContact.save();
-        res.status(200).json(newContact);
+        res.status(201).json(newContact);
     }
 }
 
